@@ -1,1 +1,0 @@
-# colinDietrich.github.io
