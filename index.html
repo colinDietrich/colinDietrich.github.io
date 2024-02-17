@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo"><a href="#about">Home</a></div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about" class="top-btn">About</a></li>
+          <li><a href="#projects" class="top-btn">Projects</a></li>
+          <li><a href="#contact" class="top-btn">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo"><a href="#about">Home</a></div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img class="about-pic" src="./assets/profil_colin.png" alt="Colin Dietrich profile picture" />
+      </div>
+      <div class="section__text">
+        <h1 class="title">Colin Dietrich</h1>
+        <p class="section__text__p2">Master's student in physics engineering</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/CV_colin_english.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/colin-dietrich-921893246/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/colinDietrich'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Education</h2>
+            <div class="article-container">
+                <article>
+                    <img
+                      src="./assets/logo_poly.png"
+                      alt="Experience icon"
+                      class="icon"
+                    />
+                    <div>
+                        <h3>Polytechnique Montreal – Master in Physics Engineering</h3>
+                        <p>2021 - Present</p>
+                        <ul>
+                            <li>Electives in photonics, nuclear physics, and quantum mechanics.</li>
+                            <li>Relevant courses include Laser Physics, Quantum Mechanics, Nuclear Reactor Physics, and Numerical Methods.</li>
+                        </ul>
+                    </div>
+                  </article>
+              <article>
+                <img
+                  src="./assets/logo_epb.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                    <h3>Ecole Polytechnique de Bruxelles – Master in Physics Engineering</h3>
+                    <p>2021 - Present</p>
+                    <ul>
+                        <li>Electives in photonics, nuclear physics, and quantum mechanics.</li>
+                        <li>Relevant courses include Laser Physics, Quantum Mechanics, Nuclear Reactor Physics, and Numerical Methods.</li>
+                    </ul>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/logo_epb.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                    <h3>Ecole Polytechnique de Bruxelles – Bachelor in Engineering Sciences</h3>
+                    <p>2018 – 2021</p>
+                    <ul>
+                        <li>Specialization: Physics</li>
+                        <li>Graduated Magna Cum Laude</li>
+                        <li>Electives in photonics and quantum mechanics.</li>
+                        <li>Relevant courses include Quantum Mechanics, Object-Oriented Programming, Introduction to Computer Science, Numerical Analysis, Fourier Optics, Applied Electronics, and Electromagnetics.</li>
+                    </ul>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Experience</h2>
+            <div class="article-container">
+                <article>
+                    <img
+                      src="./assets/logo_codepo.png"
+                      alt="Experience icon"
+                      class="icon"
+                    />
+                    <div>
+                        <h3>CODEPO Université Libre de Bruxelles – CAMESKIN</h3>
+                        <p>2021 - Present</p>
+                        <p>Development cooperation project focusing on the design of an energy monitoring system for solar systems in rural areas of the Democratic Republic of Congo.</p>
+                    </div>
+                  </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                    <h3>Self-employment: Private Tutor</h3>
+                    <p>2018 - Present</p>
+                    <p>Providing courses in mathematics and science for high school and university students.</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/logo_uilekot.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                    <h3>Jeugdhuis 't Uilekot: Youth Center Manager</h3>
+                    <p>2018 - Present</p>
+                    <p>Management of a youth center, organizing events and managing finances.</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/logo_gon.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                    <h3>Self-employment: Video Game Developer</h3>
+                    <p>2017 - 2018</p>
+                    <p>Developed mobile games in Swift, with two titles released on the Apple Store.</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/logo_batd.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                    <h3>Belgian Association for Tennis Development (BATD): Private Tennis Teacher</h3>
+                    <p>2016 - 2018</p>
+                    <p>Tennis coaching for individuals and groups, with lessons conducted in Dutch.</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse some of my</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-container">
+        <div class="about-project-containers">
+          <div class="details-container color-container">
+            <div class="article-project-container">
+              <img
+                src="./assets/rayTracing1.png"
+                alt="Project 1"
+                class="project-img2"
+              />
+              <img
+                src="./assets/rayTracing2.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Ray-Tracing and Optimization</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dapibus vestibulum risus eget pharetra. Suspendisse accumsan ante velit, hendrerit pharetra odio malesuada et. Donec consequat justo ac ligula laoreet, quis dapibus purus imperdiet. Suspendisse potenti. Donec in laoreet metus, id tincidunt augue. In ultrices velit imperdiet eros rutrum feugiat sit amet vitae eros. Curabitur dictum massa in magna blandit, quis pellentesque ligula mattis. Etiam lacus urna, lacinia sit amet sapien ultricies, tempor venenatis dolor. Vestibulum porttitor metus vel laoreet tincidunt. Curabitur at lacinia massa, eget laoreet arcu. Suspendisse eu elit arcu. Etiam nec tincidunt velit, quis hendrerit neque. Donec vestibulum pellentesque erat. Donec ac convallis neque, in egestas ipsum. Duis sodales dui eget lacinia pretium.</p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-project-container">
+              <img
+                src="./assets/proto.png"
+                alt="Project 2"
+                class="project-img"
+              />
+              <img
+                src="./assets/spectreMercure.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Optical Spectrometer</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dapibus vestibulum risus eget pharetra. Suspendisse accumsan ante velit, hendrerit pharetra odio malesuada et. Donec consequat justo ac ligula laoreet, quis dapibus purus imperdiet. Suspendisse potenti. Donec in laoreet metus, id tincidunt augue. In ultrices velit imperdiet eros rutrum feugiat sit amet vitae eros. Curabitur dictum massa in magna blandit, quis pellentesque ligula mattis. Etiam lacus urna, lacinia sit amet sapien ultricies, tempor venenatis dolor. Vestibulum porttitor metus vel laoreet tincidunt. Curabitur at lacinia massa, eget laoreet arcu. Suspendisse eu elit arcu. Etiam nec tincidunt velit, quis hendrerit neque. Donec vestibulum pellentesque erat. Donec ac convallis neque, in egestas ipsum. Duis sodales dui eget lacinia pretium.</p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-project-container">
+              <img
+                src="./assets/proto3_1.png"
+                alt="Project 3"
+                class="project-img2"
+              />
+              <img
+                src="./assets/proto3_2.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Design of an energy monitoring system</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dapibus vestibulum risus eget pharetra. Suspendisse accumsan ante velit, hendrerit pharetra odio malesuada et. Donec consequat justo ac ligula laoreet, quis dapibus purus imperdiet. Suspendisse potenti. Donec in laoreet metus, id tincidunt augue. In ultrices velit imperdiet eros rutrum feugiat sit amet vitae eros. Curabitur dictum massa in magna blandit, quis pellentesque ligula mattis. Etiam lacus urna, lacinia sit amet sapien ultricies, tempor venenatis dolor. Vestibulum porttitor metus vel laoreet tincidunt. Curabitur at lacinia massa, eget laoreet arcu. Suspendisse eu elit arcu. Etiam nec tincidunt velit, quis hendrerit neque. Donec vestibulum pellentesque erat. Donec ac convallis neque, in egestas ipsum. Duis sodales dui eget lacinia pretium.</p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:colindiet@gmail.com">colindiet@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/colin-dietrich-921893246/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Colin Dietrich. All Rights Reserved.</p>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>
