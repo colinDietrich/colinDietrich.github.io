@@ -312,6 +312,7 @@ section {
   border: rgb(53, 53, 53) 0.1rem solid;
   border-color: rgb(163, 163, 163);
   text-align: left;
+  margin-bottom: 2rem;
 }
 
 .section-container {
