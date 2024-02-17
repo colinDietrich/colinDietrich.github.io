@@ -1,54 +1,77 @@
-body {
-    font-family: Arial, sans-serif;
+/* General Styles */
+body, h1, p {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header, footer {
+    background-color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background-color: #f0f0f0;
-}
-
-header button {
-    cursor: pointer;
-}
-
-header ul {
-    list-style: none;
-    display: flex;
-}
-
-header ul li {
-    margin-left: 20px;
-}
-
-.nav-link {
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-}
-
-.nav-link.active {
-    color: blue;
-}
-
-.project-container {
-    display: flex;
-    overflow-x: auto;
-}
-
-.project-container > div {
-    flex: 0 0 auto;
-    width: 300px;
-    margin: 10px;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+    top: 0;
+    border-bottom: 1px solid #eaeaea;
 }
 
 footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #f0f0f0;
+    bottom: 0;
+    font-size: 0.8em;
 }
+
+.left-nav, .right-nav {
+    display: inline-block;
+}
+
+.right-nav {
+    float: right;
+    margin-right: 20px;
+}
+
+.nav-link {
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+}
+
+.nav-link:hover, .nav-link.active {
+    background-color: #f5f5f5;
+}
+
+#homeButton {
+    background: none;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+#homeButton:hover {
+    background-color: #f5f5f5;
+}
+
+/* Main Content Styles */
+main {
+    padding-top: 60px;
+}
+
+.home-section, .cv-section, .projects-section, .contact-section {
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+/* Footer Styles */
+.footer-content span {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+/* Add additional styles as needed */
