@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
+    <title>Colin Dietrich Portfolyo</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
   </head>
@@ -197,82 +197,194 @@
       <p class="section__text__p1">Browse some of my</p>
       <h1 class="title">Projects</h1>
       <div class="experience-container">
-        <div class="about-project-containers">
-          <div class="details-container color-container">
-            <div class="article-project-container">
-              <img
-                src="./assets/rayTracing1.png"
-                alt="Project 1"
-                class="project-img2"
-              />
-              <img
-                src="./assets/rayTracing2.png"
-                alt="Project 1"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Ray-Tracing and Optimization</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dapibus vestibulum risus eget pharetra. Suspendisse accumsan ante velit, hendrerit pharetra odio malesuada et. Donec consequat justo ac ligula laoreet, quis dapibus purus imperdiet. Suspendisse potenti. Donec in laoreet metus, id tincidunt augue. In ultrices velit imperdiet eros rutrum feugiat sit amet vitae eros. Curabitur dictum massa in magna blandit, quis pellentesque ligula mattis. Etiam lacus urna, lacinia sit amet sapien ultricies, tempor venenatis dolor. Vestibulum porttitor metus vel laoreet tincidunt. Curabitur at lacinia massa, eget laoreet arcu. Suspendisse eu elit arcu. Etiam nec tincidunt velit, quis hendrerit neque. Donec vestibulum pellentesque erat. Donec ac convallis neque, in egestas ipsum. Duis sodales dui eget lacinia pretium.</p>
-            <div class="btn-container">
-              <button
+
+          <div class="project-border-containers">
+            <button type="button" class="project-title">1. Nonlinear Materials optimization for Bright Quantum State Generation
+            </button>        
+            <div class="projects-details-container">
+              <div class="article-project-container">
+                <img
+                  src="./assets/posterGA.png"
+                  alt="Project 1"
+                  class="img-poster"
+                />
+              </div>
+              <br>
+              <p>During my master's studies, I had the opportunity to present some of my research at the 7th Montreal Photonics Networking Event, focusing on the inverse design of nonlinear materials. My project centered around creating a genetic algorithm to precisely adjust second-order nonlinear materials, essential for producing entangled photons via the process of Spontaneous Parametric Down-Conversion (SPDC).</p>
+              <br>
+              <p>The aim of this work was to enhance the generation of entangled photons by optimizing the characteristics of nonlinear optical materials, a key step forward for technologies dependent on quantum light sources, including high-resolution imaging and accurate measurement systems.</p>
+              <br>
+              <p>The genetic algorithm is inspired by natural selection and evolution. It iteratively modifies the crystal structure of nonlinear materials to find the optimal configuration that maximizes the desired characteristics of the emitted entangled photon pairs. This approach is beneficial because it navigates through a vast space of potential solutions to identify the most effective material properties for photon generation, thereby contributing to the field of photonics and quantum technologies.</p>
+              <br>
+              <p>For more information, please see the GitHub link below and the brief article !</p>
+              <br>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/colinDietrich/ParaTune'"
+                >
+                  Github
+                </button>
+                <button 
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
+                type="submit" 
+                onclick="window.open('./assets/GApaper.pdf')"
+                >
+                Download Short Paper
               </button>
+              </div>
             </div>
           </div>
-          <div class="details-container color-container">
-            <div class="article-project-container">
+
+
+          <div class="project-border-containers">
+            <button type="button" class="project-title">2. Solver for two-dimensional Poisson equation </button>        
+            <div class="projects-details-container">
+              <div class="article-project-container">
+                <img
+                  src="./assets/schemaPoissonDiscretization.png"
+                  alt="Project 2"
+                  class="img-poster"
+                />
+              </div>
+              <br>
+              <p>This project consists in developing a C program to solve the two-dimensional Poisson equation numerically. The focus was on modeling different shapes of membranes, discretizing the domain, and solving the equation using an iterative Multi-Grid method. A key aspect of my project was optimizing the solution process with a relaxation parameter and enhancing the solver's performance by integrating a Multi-Grid preconditioner alongside the PRIMME solver.</p>
+              <br>
+              <p>The program ranged from a basic two-grid method to more complex multi-grid solvers capable of running in different cycles, with provisions for applying corrective factors and utilizing preconditioners to improve convergence rates. Additionally, the project explored using the PRIMME solver for eigenvalue problems, where the Multi-Grid preconditioner played a crucial role in speeding up the convergence.</p>
+              <br> 
+              <p>The multi-grid method is an efficient numerical approach for solving differential equations, leveraging multiple levels of grid resolution. The core idea behind the two-grid algorithm is to perform most computational steps inexpensively, with the exception of solving with the UMFPACK direct solver on the coarse grid. The multi-grid method enhances this by iteratively applying pre-smoothing and post-smoothing on progressively coarser grids (each new coarse grid doubles the discretization step of the old grid until a grid is coarse enough for the problem to be solved directly, significantly reducing computational costs.</p>
+              <br>
+              <p>For more information, please see the GitHub link below !</p>
+              <br>
               <img
-                src="./assets/proto.png"
-                alt="Project 2"
-                class="project-img"
-              />
-              <img
-                src="./assets/spectreMercure.png"
-                alt="Project 2"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Optical Spectrometer</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dapibus vestibulum risus eget pharetra. Suspendisse accumsan ante velit, hendrerit pharetra odio malesuada et. Donec consequat justo ac ligula laoreet, quis dapibus purus imperdiet. Suspendisse potenti. Donec in laoreet metus, id tincidunt augue. In ultrices velit imperdiet eros rutrum feugiat sit amet vitae eros. Curabitur dictum massa in magna blandit, quis pellentesque ligula mattis. Etiam lacus urna, lacinia sit amet sapien ultricies, tempor venenatis dolor. Vestibulum porttitor metus vel laoreet tincidunt. Curabitur at lacinia massa, eget laoreet arcu. Suspendisse eu elit arcu. Etiam nec tincidunt velit, quis hendrerit neque. Donec vestibulum pellentesque erat. Donec ac convallis neque, in egestas ipsum. Duis sodales dui eget lacinia pretium.</p>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-project-container">
-              <img
-                src="./assets/proto3_1.png"
-                alt="Project 3"
-                class="project-img2"
-              />
-              <img
-                src="./assets/proto3_2.png"
-                alt="Project 3"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Design of an energy monitoring system</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dapibus vestibulum risus eget pharetra. Suspendisse accumsan ante velit, hendrerit pharetra odio malesuada et. Donec consequat justo ac ligula laoreet, quis dapibus purus imperdiet. Suspendisse potenti. Donec in laoreet metus, id tincidunt augue. In ultrices velit imperdiet eros rutrum feugiat sit amet vitae eros. Curabitur dictum massa in magna blandit, quis pellentesque ligula mattis. Etiam lacus urna, lacinia sit amet sapien ultricies, tempor venenatis dolor. Vestibulum porttitor metus vel laoreet tincidunt. Curabitur at lacinia massa, eget laoreet arcu. Suspendisse eu elit arcu. Etiam nec tincidunt velit, quis hendrerit neque. Donec vestibulum pellentesque erat. Donec ac convallis neque, in egestas ipsum. Duis sodales dui eget lacinia pretium.</p>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
+                  src="./assets/poissonSolution.png"
+                  alt="Project 2"
+                  class="img-poster"
+                />
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/colinDietrich/PoissonSolver'"
+                >
+                  Github
+                </button>
+              </div>
             </div>
           </div>
+
+
+          <div class="project-border-containers">
+            <button type="button" class="project-title">3. Ray-Tracing simulations</button>        
+            <div class="projects-details-container">
+              <div class="article-project-container">
+                <img
+                  src="./assets/GA_result.png"
+                  alt="Project 3"
+                  class="img-poster"
+                />
+              </div>
+              <br>
+              <p>During this project I developed a ray-tracing software for analyzing electromagnetic wave propagation. The goal was to simulate how a device receives power from a Wifi access point and to map out 5G indoor small cell base station coverage areas, including the received bit rate based on the receiver's location.</p>
+              <br>
+              <p>To make the simulations manageable and efficient, we based our work on a few key assumptions, such as using lossless half-wavelength dipole antennas for the 5G network, assuming all transmitters and receivers were at the same height, and focusing only on horizontally propagating plane waves. We also applied the far-field approximation, which simplified the wave interactions within the environment by only considering reflections and transmissions from walls up to three times, and disregarding any diffraction or internal obstacles like furniture.</p>
+              <br>
+              <p>The software, developed in C++, utilized an object-oriented approach to enhance both modeling capabilities and computational efficiency. It offered three modes of operation: the first mode visualized the rays reaching a receiver and calculated the received power for specified transmitter and receiver positions; the second mode mapped out the coverage area and signal intensity, allowing for variable transmitter placements and discretization levels; and the third mode employed a genetic algorithm to determine the optimal number and placement of transmitters for maximum coverage. This optimization was particularly innovative, as it used chromosome replication techniques to avoid exhaustive positioning evaluations and didn't fix the number of sources in advance, drawing inspiration from research by C. Ting and others on wireless transmitter placement using genetic algorithms.</p>
+              <br>
+              <p>For more information, please see the GitHub link below !</p>
+              <br>
+              <img
+                  src="./assets/Modes.png"
+                  alt="Project 3"
+                  class="img-poster"
+                />
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/colinDietrich/rayTracing'"
+                >
+                  Github
+                </button>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="project-border-containers">
+            <button type="button" class="project-title">4. Energy Monitoring System</button>        
+            <div class="projects-details-container">
+              <div class="article-project-container">
+                <img
+                  src="./assets/protoCodepo.png"
+                  alt="Project 3"
+                  class="img-poster2"
+                />
+              </div>
+              <br>
+              <p>In the 2022-2023 academic year, I participated in a cooperative project with Camsekin in Kinshasa, aimed at addressing the challenges posed by the unstable electrical grid in the Democratic Republic of Congo. Camsekin, a refrigerated medical storage facility, relies heavily on solar energy due to the local grid's unreliability. Our project's goal was to create an energy monitoring system to preempt potential outages and ensure the continuous operation of this crucial infrastructure.</p>
+              <br>
+              <p>Developed by students from the Ecole Polytechnique de Bruxelles in partnership with CAMESKIN, the project focused on enhancing battery systems through an energy monitoring device. This pilot project was designed with the potential to be expanded to rural electrical systems where maintenance and repair could be significantly delayed and costly.</p>
+              <br>
+              <p>The system we developed monitors a battery pack and includes software that can be run on a computer for remote visualization of the collected data. We employed a Kalman filter for estimating the remaining battery life, modeling the battery pack as an equivalent circuit. The parameters for this model were determined using a Hybrid Pulse Power Characterization (HPPC) test and MATLAB scripts, which are accessible on a public repository.</p>
+              <br>
+              <p>Additionally, Python scripts were written to monitor the solar panels connected to the battery pack. These scripts compare the actual power output, measured by the device, to the theoretical power calculated from local weather data. Although an Arduino DUE microcontroller was initially used for this project, the system's design allows for adaptation to other microcontrollers.</p>
+              <br>
+              <p>This energy monitoring system was designed not only to enhance the use of solar systems in rural areas but also to support the CAMESKIN warehouse in Kinshasa. By monitoring the solar panels and batteries that power the cold chain for medicine preservation, the project contributes to the reliability of medical supplies in the region.</p>
+              <br>
+              <p>For more information, please see the GitHub link below !</p>
+              <br>
+              <img
+                  src="./assets/kalmanCodepo.png"
+                  alt="Project 3"
+                  class="img-poster"
+                />
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/colinDietrich/Mobateli/tree/main'"
+                >
+                  Github
+                </button>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="project-border-containers">
+            <button type="button" class="project-title">5. Tower Defense Game</button>        
+            <div class="projects-details-container">
+              <div class="article-project-container">
+                <img
+                  src="./assets/towerDefense1.png"
+                  alt="Project 3"
+                  class="img-poster"
+                />
+              </div>
+              <br>
+              <p>This Tower Defense game, developed in Java, challenges players to survive numerous waves of diverse monsters by strategically placing and upgrading various weapons across multiple maps. Each monster possesses unique speed and health attributes, adding complexity to the defense strategy. Players earn in-game currency by defeating monsters, which can be used to upgrade weapons and enhance their defense capabilities. A standout feature of the game is the ability for players to design their own maps, offering a personalized gaming experience and endless replayability.</p>
+              <br>
+              <p>For more information, please see the GitHub link below !</p>
+              <br>
+              <img
+                  src="./assets/towerDefense2.png"
+                  alt="Project 3"
+                  class="img-poster"
+                />
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/colinDietrich/TowerDefense'"
+                >
+                  Github
+                </button>
+              </div>
+            </div>
+          </div>
+
+
         </div>
       </div>
     </section>
+
     <section id="contact">
       <p class="section__text__p1">Get in Touch</p>
       <h1 class="title">Contact Me</h1>

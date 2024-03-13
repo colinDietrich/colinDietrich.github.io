@@ -375,6 +375,7 @@ article .icon {
   flex-direction: column;
 }
 
+
 .color-container {
   border-color: rgb(163, 163, 163);
   background: rgb(250, 250, 250);
@@ -386,21 +387,62 @@ article .icon {
     flex-direction: row;
     gap: 2.5rem;
     justify-content: space-around;
-  }
-
-.project-img {
-  border-radius: 2rem;
-  width: 40%;
 }
-
-.project-img2 {
-    border-radius: 2rem;
-    width: 55%;
-  }
 
 .project-title {
   margin: 1rem;
   color: black;
+  font-weight: 600;
+  font-size: 1.75rem;
+  text-decoration: none;
+  text-decoration-color: white;
+  background: none;
+  border: none
+}
+
+.active, .project-title:hover {
+  color: grey;
+  text-decoration: underline;
+  text-decoration-color: rgb(181, 181, 181);
+}
+
+.project-title:after {
+  content: '\002B';
+  margin-left: 1rem;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.project-border-containers {
+  padding: 0rem;
+  flex: 1;
+  background: white;
+  border-radius: 2rem;
+  border: 0.1rem solid rgb(163, 163, 163);
+  text-align: left;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+
+.projects-details-container {
+  display: none;
+  padding: 1.5rem;
+  flex: 1;
+  border-radius: 2rem;
+  text-align: left;
+}
+
+.img-poster {
+    border-radius: 1rem;
+    width: 90%;
+  }
+
+.img-poster2 {
+  border-radius: 1rem;
+  width: 100%;
 }
 
 .project-btn {
