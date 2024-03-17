@@ -445,6 +445,19 @@ article .icon {
   width: 100%;
 }
 
+.img-poster3 {
+  border-radius: 1rem;
+  width: 70%;
+}
+
+.description {
+  font-size: 0.8rem;
+}
+
+.link {
+  color: blue;
+}
+
 .project-btn {
   color: black;
   border-color: rgb(163, 163, 163);
