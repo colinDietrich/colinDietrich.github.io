@@ -186,6 +186,7 @@ section {
   height: 300px;
   width: 300px;
   margin: auto 0;
+  padding-right: 2rem;
 }
 
 .section__text {
@@ -193,17 +194,21 @@ section {
   text-align: center;
 }
 
-.section__text p {
-  font-weight: 600;
-}
-
 .section__text__p1 {
   text-align: center;
+  font-weight: 600;
 }
 
 .section__text__p2 {
   font-size: 1.75rem;
   margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.section__text__p3 {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  font-weight: 200;
 }
 
 .title {
@@ -315,6 +320,11 @@ section {
   margin-bottom: 2rem;
 }
 
+.little-section {
+  padding: 0.5rem;
+  flex: 0;
+}
+
 .section-container {
   display: flex;
   justify-content: center;
@@ -326,6 +336,15 @@ section {
   height: 350px;
   width: 350px;
   margin: auto 0;
+}
+
+.sub-title {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.date {
+  color: blue
 }
 
 /* EXPERIENCE SECTION */
