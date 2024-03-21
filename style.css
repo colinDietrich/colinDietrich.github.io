@@ -281,6 +281,12 @@ section {
 
 #about {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  height: 80%;
 }
 
 .about-containers {
@@ -303,12 +309,6 @@ section {
   border-radius: 2rem;
 }
 
-.arrow {
-  position: absolute;
-  right: -5rem;
-  bottom: 2.5rem;
-}
-
 .details-container {
   padding: 1.5rem;
   flex: 1;
@@ -322,7 +322,6 @@ section {
 
 .little-section {
   padding: 0.5rem;
-  flex: 0;
 }
 
 .section-container {
