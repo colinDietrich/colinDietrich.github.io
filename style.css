@@ -7,6 +7,13 @@
   padding: 0;
 }
 
+.container-parent {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap instead of shrinking too small */
+  justify-content: space-between; /* Adjust spacing between containers */
+}
+
+
 body {
   font-family: "Fira Code", monospace;
 }
@@ -33,6 +40,16 @@ a,
 }
 
 /* DESKTOP NAV */
+
+#desktop-nav {
+  margin-bottom: 2rem;
+  flex: 1 1 auto; /* Flex-grow, shrink, and basis */
+  min-width: 300px; /* Prevent shrinking below 300px */
+  min-height: 200px;
+  padding: 20px;
+  margin: 10px;
+  box-sizing: border-box; /* Ensure padding is included in size calculation */
+}
 
 nav,
 .nav-links {
@@ -161,7 +178,6 @@ a:hover {
 /* SECTIONS */
 
 section {
-  padding-top: 4vh;
   height: 96vh;
   margin: 0 10rem;
   box-sizing: border-box;
@@ -176,22 +192,29 @@ section {
 
 #profile {
   display: flex;
-  justify-content: center;
-  gap: 0rem;
+  gap: 5rem;
   height: 80vh;
+  margin-top: 5rem;
+  flex: 1 1 auto; /* Flex-grow, shrink, and basis */
+  min-width: 300px; /* Prevent shrinking below 300px */
+  min-height: 400px;
+  padding: 20px;
+  margin: 10px;
+  box-sizing: border-box; /* Ensure padding is included in size calculation */
 }
 
 .section__pic-container {
   display: flex;
   height: 300px;
   width: 300px;
-  margin: auto 0;
   padding-right: 2rem;
 }
 
 .section__text {
   align-self: center;
   text-align: center;
+  overflow-wrap: break-word; /* Ensures long words wrap to the next line */
+  word-break: break-word; /* Ensures text does not overflow the container */
 }
 
 .section__text__p1 {
@@ -201,7 +224,6 @@ section {
 
 .section__text__p2 {
   font-size: 1.75rem;
-  margin-bottom: 1rem;
   font-weight: 600;
 }
 
@@ -226,7 +248,9 @@ section {
 
 .icon {
   cursor: pointer;
-  height: 2rem;
+  width: 2rem;
+  height: auto;
+  object-fit: contain;
 }
 
 /* BUTTONS */
@@ -281,12 +305,17 @@ section {
 
 #about {
   position: relative;
-  display: flex;
   flex-direction: column;
   display: flex;
   justify-content: center;
-  gap: 4rem;
   height: 80%;
+  margin-top: 20rem;
+  flex: 1 1 auto; /* Flex-grow, shrink, and basis */
+  min-width: 300px; /* Prevent shrinking below 300px */
+  min-height: 200px;
+  padding: 20px;
+  margin: 10px;
+  box-sizing: border-box; /* Ensure padding is included in size calculation */
 }
 
 .about-containers {
@@ -320,8 +349,21 @@ section {
   margin-bottom: 2rem;
 }
 
-.little-section {
-  padding: 0.5rem;
+.little-section article {
+  display: inline-flex;
+  align-items: flex-start; /* Align the logo and text at the top */
+}
+
+.little-section article div {
+  text-align: left; /* Ensure the text within the div is left-aligned */
+}
+
+.little-section h3 {
+  margin: 0; /* Remove default margins */
+}
+
+.little-section p {
+  margin: 0; /* Remove default margins for paragraphs */
 }
 
 .section-container {
@@ -363,6 +405,7 @@ section {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  gap:3rem;
 }
 
 .article-container {
@@ -376,9 +419,14 @@ section {
 
 article {
   display: flex;
+  align-items: flex-start;
   width: fit;
   justify-content: space-around;
   gap: 0.5rem;
+}
+
+article div {
+  text-align: left;          /* Ensure the text block is left-aligned */
 }
 
 article .icon {
@@ -386,55 +434,63 @@ article .icon {
 }
 
 /* PROJECTS SECTION */
-
 #projects {
   position: relative;
   display: flex;
   flex-direction: column;
+  flex: 1 1 auto; /* Flex-grow, flex-shrink, and flex-basis */
+  min-width: 300px; /* Ensure the container does not shrink below 300px */
+  min-height: auto; /* Let the container grow with content */
+  padding: 20px;
+  margin: 10px auto; /* Centering the container and ensuring consistent spacing */
+  box-sizing: border-box; /* Include padding and border in the element's size */
+  width: 100%; /* Ensure the container takes up full width within its parent */
+  max-width: 1200px; /* Prevent the container from growing too wide */
 }
 
-
-.color-container {
-  border-color: rgb(163, 163, 163);
-  background: rgb(250, 250, 250);
-}
-
+/* General container for articles */
 .article-project-container {
-    display: flex;
-    text-align: initial;
-    flex-direction: row;
-    gap: 2.5rem;
-    justify-content: space-around;
+  display: flex;
+  flex-direction: row;
+  gap: 2.5rem;
+  justify-content: space-around;
+  flex-wrap: wrap; /* Ensure the content wraps on smaller screens */
+  width: 100%;
 }
 
+/* Styling for individual project titles */
 .project-title {
-  margin: 1rem;
+  margin: 1rem 0;
   color: black;
   font-weight: 600;
   font-size: 1.75rem;
   text-decoration: none;
   text-decoration-color: white;
   background: none;
-  border: none
+  border: none;
+  display: block;
 }
 
+/* Hover and active states */
 .active, .project-title:hover {
   color: grey;
   text-decoration: underline;
   text-decoration-color: rgb(181, 181, 181);
 }
 
+/* Content toggle for the title */
 .project-title:after {
-  content: '\002B';
+  content: '\002B'; /* Plus sign */
   margin-left: 1rem;
 }
 
 .active:after {
-  content: "\2212";
+  content: "\2212"; /* Minus sign */
 }
 
+/* Individual project containers */
 .project-border-containers {
-  padding: 0rem;
+  padding: 1rem; /* Add padding for better spacing */
   flex: 1;
   background: white;
   border-radius: 2rem;
@@ -442,22 +498,29 @@ article .icon {
   text-align: left;
   margin-bottom: 1rem;
   margin-top: 1rem;
+  width: 100%;
+  box-sizing: border-box;
 }
 
-
+/* Details container for each project, dynamically displayed */
 .projects-details-container {
-  display: none;
+  display: none; /* Initially hidden, shown on interaction */
   padding: 1.5rem;
   flex: 1;
   border-radius: 2rem;
   text-align: left;
+  width: 100%;
+  box-sizing: border-box;
 }
 
+/* Images inside project details */
 .img-poster {
-    border-radius: 1rem;
-    width: 90%;
-  }
+  border-radius: 1rem;
+  width: 100%; /* Ensure the image takes full width */
+  max-width: 90%; /* Prevent it from growing too large */
+}
 
+/* Other image styles */
 .img-poster2 {
   border-radius: 1rem;
   width: 100%;
@@ -468,18 +531,35 @@ article .icon {
   width: 70%;
 }
 
+/* Description and text styling */
 .description {
   font-size: 0.8rem;
 }
 
+/* Links inside the projects */
 .link {
   color: blue;
+  text-decoration: none;
 }
 
+.link:hover {
+  text-decoration: underline;
+}
+
+/* Button styling */
 .project-btn {
   color: black;
   border-color: rgb(163, 163, 163);
+  padding: 0.5rem 1rem;
+  background: none;
+  border-radius: 1rem;
+  cursor: pointer;
 }
+
+.project-btn:hover {
+  background: rgb(220, 220, 220);
+}
+
 
 /* CONTACT */
 
@@ -488,6 +568,13 @@ article .icon {
   justify-content: center;
   flex-direction: column;
   height: 70vh;
+  padding-top: 100px; /* Add space above the contact section */
+  flex: 1 1 auto; /* Flex-grow, shrink, and basis */
+  min-width: 300px; /* Prevent shrinking below 300px */
+  min-height: 200px;
+  padding: 20px;
+  margin: 10px;
+  box-sizing: border-box; /* Ensure padding is included in size calculation */
 }
 
 .contact-info-upper-container {
