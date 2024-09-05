@@ -313,7 +313,7 @@ section {
   flex: 1 1 auto; /* Flex-grow, shrink, and basis */
   min-width: 300px; /* Prevent shrinking below 300px */
   min-height: 200px;
-  padding: 20px;
+  padding: 80px;
   margin: 10px;
   box-sizing: border-box; /* Ensure padding is included in size calculation */
 }
@@ -441,7 +441,7 @@ article .icon {
   flex: 1 1 auto; /* Flex-grow, flex-shrink, and flex-basis */
   min-width: 300px; /* Ensure the container does not shrink below 300px */
   min-height: auto; /* Let the container grow with content */
-  padding: 20px;
+  padding: 80px;
   margin: 10px auto; /* Centering the container and ensuring consistent spacing */
   box-sizing: border-box; /* Include padding and border in the element's size */
   width: 100%; /* Ensure the container takes up full width within its parent */
