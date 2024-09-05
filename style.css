@@ -198,7 +198,7 @@ section {
   flex: 1 1 auto; /* Flex-grow, shrink, and basis */
   min-width: 300px; /* Prevent shrinking below 300px */
   min-height: 400px;
-  padding: 20px;
+  padding: 80px;
   margin: 10px;
   box-sizing: border-box; /* Ensure padding is included in size calculation */
 }
