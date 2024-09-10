@@ -324,6 +324,17 @@ section {
   margin-top: 2rem;
 }
 
+.details-container {
+  padding: 1.5rem;
+  flex: 1;
+  background: white;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  text-align: left;
+  margin-bottom: 2rem;
+}
+
 .about-details-container {
   justify-content: center;
   flex-direction: column;
@@ -336,17 +347,6 @@ section {
 
 .about-pic {
   border-radius: 2rem;
-}
-
-.details-container {
-  padding: 1.5rem;
-  flex: 1;
-  background: white;
-  border-radius: 2rem;
-  border: rgb(53, 53, 53) 0.1rem solid;
-  border-color: rgb(163, 163, 163);
-  text-align: left;
-  margin-bottom: 2rem;
 }
 
 .little-section article {
@@ -386,6 +386,13 @@ section {
 
 .date {
   color: blue
+}
+
+#space { text-indent: 100%; }
+.box {
+  width: 20rem;
+  height: auto;
+  margin: 5px;
 }
 
 /* EXPERIENCE SECTION */
