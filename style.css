@@ -178,10 +178,8 @@ a:hover {
 /* SECTIONS */
 
 section {
-  height: 96vh;
   margin: 0 10rem;
   box-sizing: border-box;
-  min-height: fit-content;
 }
 
 .section-container {
@@ -313,17 +311,18 @@ section {
   flex: 1 1 auto; /* Flex-grow, shrink, and basis */
   min-width: 300px; /* Prevent shrinking below 300px */
   min-height: 200px;
-  padding: 80px;
+  padding: 30px;
   margin: 10px;
   box-sizing: border-box; /* Ensure padding is included in size calculation */
 }
 
 .about-containers {
+  display: flex;
+  justify-content: space-between;
   gap: 2rem;
   margin-bottom: 2rem;
   margin-top: 2rem;
 }
-
 .details-container {
   padding: 1.5rem;
   flex: 1;
@@ -347,11 +346,6 @@ section {
 
 .about-pic {
   border-radius: 2rem;
-}
-
-.little-section article {
-  display: inline-flex;
-  align-items: flex-start; /* Align the logo and text at the top */
 }
 
 .little-section article div {
@@ -408,6 +402,13 @@ section {
   margin-bottom: 2rem;
 }
 
+.little-experience-sub-title {
+  color: rgb(85, 85, 85);
+  font-weight: 600;
+  font-size: 1.75rem;
+  flex-wrap: wrap;
+}
+
 .experience-details-container {
   display: flex;
   justify-content: center;
@@ -448,7 +449,7 @@ article .icon {
   flex: 1 1 auto; /* Flex-grow, flex-shrink, and flex-basis */
   min-width: 300px; /* Ensure the container does not shrink below 300px */
   min-height: auto; /* Let the container grow with content */
-  padding: 80px;
+  padding: 30px;
   margin: 10px auto; /* Centering the container and ensuring consistent spacing */
   box-sizing: border-box; /* Include padding and border in the element's size */
   width: 100%; /* Ensure the container takes up full width within its parent */
