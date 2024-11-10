@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="en">
+<html class="has-navbar-fixed-top"></html>
+
+<head>
+  <title>devfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="img/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="css/main.bundle.css">
+  <script src="https://kit.fontawesome.com/4e5a72c756.js"></script>
+  <style>
+    /* Custom hover effect for the icon */
+    .navbar-item i {
+      color: #f2f2f2; /* Default color */
+      transition: color 0.3s; /* Smooth transition */
+    }
+    .navbar-item:hover i {
+      color: #adacac; /* Color on hover */
+    }
+    .button.is-rounded.is-dark.has-text-light {
+      border: 2px solid #ffffff; /* Light border color */
+    }
+    .navbar-menu.is-active {
+      display: block; /* Show when active */
+      background-color: #363636; /* Custom background color */
+      padding: 1rem; /* Optional padding */
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar is-dark is-fixed-top" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <!-- Home Icon -->
+      <div class="navbar-item">
+        <a href="#Home">
+          <i class="fas fa-home fa-2x icon is-large has-text-light"></i>
+        </a>
+      </div>
+      
+      <!-- Hamburger menu icon -->
+      <a role="button" class="navbar-burger has-text-light" aria-label="menu" aria-expanded="false" data-target="navbarMenu">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div id="navbarMenu" class="navbar-menu">
+      <div class="navbar-end">
+        <!-- Navbar items in dropdown style for mobile -->
+        <div class="navbar-item">
+          <a href="#About" class="button is-rounded is-dark has-text-light">
+            About
+          </a>
+        </div>
+        <div class="navbar-item">
+          <a href="#Experience" class="button is-rounded is-dark has-text-light">
+            Experience
+          </a>
+        </div>
+        <div class="navbar-item">
+          <a href="#Projects" class="button is-rounded is-dark has-text-light">
+            Projects
+          </a>
+        </div>
+        <div class="navbar-item">
+          <a href="#Education" class="button is-rounded is-dark has-text-light">
+            Education
+          </a>
+        </div>
+        <div class="navbar-item">
+          <a href="#Contact" class="button is-rounded is-dark has-text-light">
+            Contact
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero is-dark" id="Home">
+    <div class="hero-body">
+      <div class="container">
+        <div class="level">
+          <div class="level-item has-text-centered">
+            <figure class="image is-200x200">
+              <img class="is-rounded" src="img/colinPhoto.png">
+            </figure>
+          </div>
+        </div>
+        <div class="columns has-text-centered">
+          <div class="column">
+            <h1 class="title is-1">
+              Colin Dietrich
+            </h1>
+            <h2 class="subtitle">
+              <i class="fas fa-atom"></i>  Quantum Computing&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-microscope"></i>  Photonis&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-laptop-code"></i>  Optimization Methods
+            </h2>
+            <h2>
+              <a href="img/resume.pdf" class="icon has-text-light" target="_blank">
+                <i class="fas fa-download"></i> <strong>Resume</strong>
+              </a>
+            </h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="About">
+    <div class="container">
+      <h1 class="title">About Me</h1>
+      <hr />
+      <p>Dual master's graduate in Engineering Physics with two years of lab 
+        experience as a research assistant focused on advanced quantum optical 
+        systems and simulation. Looking for opportunities to advance quantum computing technology.</p>
+    </div>
+  </section>
+  <section class="section" id="Experience">
+    <div class="container">
+      <h1 class="title">Experience</h1>
+      <hr />
+      <div class="card">
+        <div class="card-content">
+          <div class="media">
+            <div class="media-left">
+              <figure class="image is-48x48">
+                <img src="img/logo_lfo.svg" alt="Placeholder image">
+              </figure>
+            </div>
+            <div class="media-content">
+              <p class="title is-4">Student Research Assistant</p>
+              <p class="subtitle is-6"><b>Laboratoire Des Fibres Optiques</b> | <time datetime="2022">2022</time> - <time
+                  datetime="2024">2024</time> | Montreal, CA </p>
+            </div>
+          </div>
+          <div class="content">
+            <p>Conducted full-time research on developing a bright and high-purity source of entangled photons.</p>
+            <ul>
+              <li>Developed a low noise, ultrafast fiber laser system with EDFA amplification for quantum optics applications.</li>
+              <li>Designed and automated complex optical experiments in Python and C (SHG-FROG, balanced homodyne detection, temporal and spectral RIN characterization, etc.).</li>
+              <li>Contributed to the ongoing experimental validation of "band conditioned states" (<a href="https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.127.270504">Virally et al.</a>) in collaboration with multiple labs.</li>
+            </ul>
+            <div class="tags">
+              <span class="tag">Quantum Optics</span>
+              <span class="tag">Research</span>
+              <span class="tag">Polytechnique Montréal</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card card-gap">
+        <div class="card-content">
+          <div class="media">
+            <div class="media-left">
+              <figure class="image is-48x48">
+                <img src="img/logo_poly.png" alt="Placeholder image">
+              </figure>
+            </div>
+            <div class="media-content">
+              <p class="title is-4">Laboratory Instructor and Teaching Assistant</p>
+              <p class="subtitle is-6"><b>Polytechnique Montréal</b> | <time datetime="2023">2023</time> - <time
+                  datetime="2024">2024</time> | Montreal, CA</p>
+            </div>
+          </div>
+          <div class="content">
+            <ul>
+              <li>Led teams and assessed physical engineering projects (<a href="https://www.polymtl.ca/programmes/cours/projet-initial-de-conception-en-genie-phys">PHS1903</a>) on pulse oximeters, infrared thermometers, wireless energy transfer systems, and laser sensing.</li>
+              <li>Evaluated coursework for Statistical Physics (<a href="https://www.polymtl.ca/programmes/cours/physique-statistique">PHS2111</a>) and Biophotonics (<a href="https://www.polymtl.ca/programmes/cours/biophotonique">GBM8802</a>) courses.</li>
+            </ul>
+            <div class="tags">
+              <span class="tag">Teaching</span>
+              <span class="tag">Photonics</span>
+              <span class="tag">Electronics</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card card-gap">
+        <div class="card-content">
+          <div class="media">
+            <div class="media-left">
+              <figure class="image is-48x48">
+                <img src="img/logo_codepo.png" alt="Placeholder image">
+              </figure>
+            </div>
+            <div class="media-content">
+              <p class="title is-4">Development Cooperation</p>
+              <p class="subtitle is-6"><b>Codepo, CAMESKIN</b> | <time datetime="2021">2021</time> - <time
+                  datetime="2022">2022</time> | Kinshasa, RDC</p>
+            </div>
+          </div>
+          <div class="content">
+            <ul>
+              <li>Developed a solar energy monitoring system for rural Congo, programming microcontrollers and a Kalman filter for improved accuracy.</li>
+              <li>Implemented an MQTT-based remote monitoring app for real-time data tracking.</li>
+              <li>Successfully installed the system in Kinshasa for tracking solar panels and medical storage batteries.</li>
+            </ul>
+            <div class="tags">
+              <span class="tag">Project management</span>
+              <span class="tag">Python</span>
+              <span class="tag">C</span>
+              <span class="tag">MQTT</span>
+              <span class="tag">Electronics</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="Projects">
+    <div class="container">
+      <h1 class="title">Browse Some Of My Projects</h1>
+      <hr />
+      <div class="tile is-ancestor">
+        <div class="tile is-vertical is-12">
+          <div class="tile">
+            <div class="tile is-parent">
+              <article class="tile is-child notification">
+                <p class="title">Quantum Hackacton</p>
+                <figure class="image is-3by2">
+                  <img class="modal-trigger" data-target="project-1-modal" src="img/carousel/hackaton/Iteration_SA.gif">
+                </figure>
+              </article>
+            </div>
+            <div class="tile is-parent">
+              <article class="tile is-child notification">
+                <p class="title">Crystal Optimization</p>
+                <figure class="image is-4by3">
+                  <img class="modal-trigger" data-target="project-2-modal" src="img/carousel/gapmf/front_gapmf.png">
+                </figure>
+              </article>
+            </div>
+            <div class="tile is-parent">
+              <article class="tile is-child notification">
+                <p class="title">Quantum Light Engineering</p>
+                <figure class="image is-4by3">
+                  <img class="modal-trigger" data-target="project-3-modal" src="img/carousel/master/panelMaster.png">
+                </figure>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tile is-ancestor">
+        <div class="tile is-vertical is-12">
+          <div class="tile">
+            <div class="tile is-parent">
+              <article class="tile is-child notification">
+                <p class="title">Ultrafast Laser</p>
+                <figure class="image is-4by3">
+                  <img class="modal-trigger" data-target="project-4-modal" src="img/carousel/laser/front_EDFA.png">
+                </figure>
+              </article>
+            </div>
+            <div class="tile is-parent">
+              <article class="tile is-child notification">
+                <p class="title">Energy Monitoring</p>
+                <figure class="image is-4by3">
+                  <img class="modal-trigger" data-target="project-5-modal" src="img/carousel/codepo/front_codepo.png">
+                </figure>
+              </article>
+            </div>
+            <div class="tile is-parent">
+              <article class="tile is-child notification">
+                <p class="title">Poisson Solver</p>
+                <figure class="image is-4by3">
+                  <img class="modal-trigger" data-target="project-6-modal" src="img/carousel/poisson/poisson.png">
+                </figure>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tile is-ancestor">
+        <div class="tile is-vertical is-12">
+          <div class="tile">
+            <div class="tile is-parent">
+              <article class="tile is-child notification">
+                <p class="title">Hawking Radiation</p>
+                <figure class="image is-4by3">
+                  <img class="modal-trigger" data-target="project-7-modal" src="img/carousel/hawking/front_hawking.png">
+                </figure>
+              </article>
+            </div>
+            <div class="tile is-parent">
+              <article class="tile is-child notification">
+                <p class="title">App Store Game</p>
+                <figure class="image is-4by3">
+                  <img class="modal-trigger" data-target="project-8-modal" src="img/carousel/kuruma/TrailerKuruma.gif">
+                </figure>
+              </article>
+            </div>
+            <div class="tile is-parent">
+              <article class="tile is-child notification">
+                <p class="title">Ray Tracing</p>
+                <figure class="image is-4by3">
+                  <img class="modal-trigger" data-target="project-9-modal" src="img/carousel/ray_tracing/front_ray_tracing.png">
+                </figure>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tile is-ancestor">
+        <div class="tile is-vertical is-12">
+          <div class="tile">
+            <div class="tile is-parent">
+              <article class="tile is-child notification">
+                <p class="title">Tower Defense</p>
+                <figure class="image is-4by3">
+                  <img class="modal-trigger" data-target="project-10-modal" src="img/carousel/tower_defense/front_tower_defense.png">
+                </figure>
+              </article>
+            </div>
+            <div class="tile is-parent">
+              <article class="tile is-child notification">
+                <p class="title"></p>
+                <figure class="image is-4by3">
+                  <img class="modal-trigger" data-target="project-11-modal" src="">
+                </figure>
+              </article>
+            </div>
+            <div class="tile is-parent">
+              <article class="tile is-child notification">
+                <p class="title"></p>
+                <figure class="image is-4by3">
+                  <img class="modal-trigger" data-target="project-12-modal" src="">
+                </figure>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="Education">
+    <div class="container">
+      <h1 class="title">Education / Training</h1>
+      <hr />
+      <div class="card">
+        <div class="card-content">
+          <div class="media">
+            <div class="media-left">
+              <figure class="image is-48x48">
+                <img src="img/logo_poly.png" alt="Placeholder image">
+              </figure>
+            </div>
+            <div class="media-content">
+              <p class="title is-4">Research MS in Engineering Physics</p>
+              <p class="subtitle is-6"><b>Polytechnique Montréal</b> - <time datetime="2022">2022</time> - <time
+                  datetime="2024">2024</time> (Montreal, CA) </p>
+            </div>
+          </div>
+          <div class="content">
+            <ul>
+              <li><b>GPA:</b> 4.0/4.0</li>
+              <li><b>Coursework:</b> Quantum Optics, Quantum Information, Ultrafast Photonics, A.I.: methods and algorithms, Quantum Field Theory (<a href="https://www.google.com/search?gs_ssp=eJzj4tDP1TcwNcpLMWD0YstNTs_MyQEALZ4FQA&q=mcgill&oq=Mcgill&gs_lcrp=EgZjaHJvbWUqCggDEC4YsQMYgAQyDAgAEAAYQxiABBiKBTIGCAEQRRg5MgwIAhAAGEMYgAQYigUyCggDEC4YsQMYgAQyDAgEEAAYQxiABBiKBTIKCAUQABixAxiABDIMCAYQABhDGIAEGIoFMgwIBxAAGEMYgAQYigUyBwgIEAAYgAQyBwgJEAAYgATSAQgzMjI3ajBqN6gCALACAA&sourceid=chrome&ie=UTF-8">McGill University</a>)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="card card-gap">
+        <div class="card-content">
+          <div class="media">
+            <div class="media-left">
+              <figure class="image is-48x48">
+                <img src="img/logo_epb.png" alt="Placeholder image">
+              </figure>
+            </div>
+            <div class="media-content">
+              <p class="title is-4">MS in Engineering Physics</p>
+              <p class="subtitle is-6"><b>École Polytechnique de Bruxelles</b> - <time datetime="2021">2021</time> - <time
+                  datetime="2024">2024</time> (Brussels, BE) </p>
+            </div>
+          </div>
+          <div class="content">
+            <ul>
+              <li><b>Grade:</b> Summa Cum Laude</li>
+              <li><b>Coursework:</b> Quantum Mechanics II, Laser Physics, Numerical Methods, Plasma Physics, Digital Electronics, Nuclear Physics</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="card card-gap">
+        <div class="card-content">
+          <div class="media">
+            <div class="media-left">
+              <figure class="image is-48x48">
+                <img src="img/logo_epb.png" alt="Placeholder image">
+              </figure>
+            </div>
+            <div class="media-content">
+              <p class="title is-4">BS in Engineering Physics</p>
+              <p class="subtitle is-6"><b>École Polytechnique de Bruxelles</b> - <time datetime="2018">2018</time> - <time
+                  datetime="2021">2021</time> (Brussels, BE) </p>
+            </div>
+          </div>
+          <div class="content">
+            <ul>
+              <li><b>Grade:</b> Magna Cum Laude</li>
+              <li><b>Coursework:</b> Quantum/Statistical Physics, Linear Algebra, Semiconductor Physics, Object-oriented programming</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="Contact">
+    <div class="container">
+      <h1 class="title">Contact</h1>
+      <hr />
+      <nav class="level">
+        <div class="level-item has-text-centered">
+          <div>
+            <a href="https://github.com/colinDietrich" class="icon is-large">
+              <i class="fab fa-2x fa-github"></i>
+            </a>
+            <p class="heading"><a href="https://github.com/colinDietrich">github.com/colinDietrich</a></p>
+          </div>
+        </div>
+        <div class="level-item has-text-centered">
+          <div>
+            <a href="mailto:markmacneil@gmail.com" class="icon is-large">
+              <i class="fas fa-2x fa-envelope"></i>
+            </a>
+            <p class="heading"><a href="mailto:colindiet@gmail.com">colindiet@gmail.com</a></p>
+          </div>
+        </div>
+        <div class="level-item has-text-centered">
+          <div>
+            <a href="https://www.linkedin.com/in/colin-dietrich/" class="icon is-large">
+              <i class="fab fa-2x fa-linkedin-in"></i>
+            </a>
+            <p class="heading"><a href="https://www.linkedin.com/in/colin-dietrich/">linkedin</a></p>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </section>
+
+  <!-- Modals -->
+  <div id="project-1-modal" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+      <header class="modal-card-head">
+        <p class="modal-card-title">1st Place at Pasqal-CMC hackaton</p>
+        <button class="delete" aria-label="close"></button>
+      </header>
+      <section class="modal-card-body">
+
+        <div id="project-1-modal-carousel" class="carousel">
+          <figure class="image is-4by3 carousel-cell">
+            <img src="img/carousel/hackaton/Iteration_SA.gif">
+          </figure>
+        </div>
+
+        <div class="content">
+
+          <p></p>
+
+          <div class="tags">
+          </div>
+
+        </div>
+
+      </section>
+      <footer class="modal-card-foot">
+        <button class="button is-success">Close</button>
+      </footer>
+    </div>
+  </div>
+
+  <div id="project-2-modal" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+      <header class="modal-card-head">
+        <p class="modal-card-title">Nonlinear Materials optimization <br>for Bright Quantum State Generation</p>
+        <button class="delete" aria-label="close"></button>
+      </header>
+      <section class="modal-card-body">
+        <div>
+          <a href="https://github.com/colinDietrich/GaPmf" target="_blank" class="button">Github Repo</a>
+          <a href="img/GApaper.pdf" target="_blank" class="button">Download Paper</a>
+        </div>
+
+        <div id="project-2-modal-carousel" class="carousel">
+          <figure class="image is-4by3 carousel-cell">
+            <img src="img/carousel/gapmf/posterGA.png">
+          </figure>
+          <figure class="image is-4by3 carousel-cell">
+            <img src="img/carousel/gapmf/results_GaPmf.png">
+          </figure>
+        </div>
+
+        <div class="content">
+
+          <p>During the 7th Montreal Photonics Networking Event, I presented my research on the inverse design of nonlinear materials.</p>
+
+        <p>I developed and released an open-source library implementing a genetic algorithm to optimize second-order nonlinear crystals for enhanced entangled photon generation through Spontaneous Parametric Down-Conversion (SPDC).</p>
+
+        <p>This work advances quantum light source technology by refining material characteristics crucial for high-precision applications in quantum imaging and metrology.</p>
+
+        <p>For more information, see the GitHub link above and the brief article!</p>
+
+          <div class="tags">
+            <span class="tag">Quant
+
+
+        </div>
+
+      </section>
+      <footer class="modal-card-foot">
+        <button class="button is-success">Close</button>
+      </footer>
+    </div>
+  </div>
+
+  <div id="project-3-modal" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+      <header class="modal-card-head">
+        <p class="modal-card-title">Engineering Quantum State of Light</p>
+        <button class="delete" aria-label="close"></button>
+      </header>
+      <section class="modal-card-body">
+        <div id="project-3-modal-carousel" class="carousel">
+          <figure class="image is-4by3 carousel-cell">
+            <img src="img/carousel/master/EOS.png">
+          </figure>
+          <figure class="image is-4by3 carousel-cell">
+            <img src="img/carousel/master/setupTotal2.png">
+          </figure>
+          <figure class="image is-4by3 carousel-cell">
+            <img src="img/carousel/master/setupTotal.png">
+          </figure>
+        </div>
+
+        <div class="content">
+          <p></p>
+        </div>
+
+      </section>
+      <footer class="modal-card-foot">
+        <button class="button is-success">Close</button>
+      </footer>
+    </div>
+  </div>
+
+  <div id="project-4-modal" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+      <header class="modal-card-head">
+        <p class="modal-card-title">Low noise, Ultrafast Fiber Laser</p>
+        <button class="delete" aria-label="close"></button>
+      </header>
+      <section class="modal-card-body">
+        <div id="project-4-modal-carousel" class="carousel">
+          <figure class="image is-4by3 carousel-cell">
+            <img src="img/carousel/laser/MO.png">
+          </figure>
+          <figure class="image is-4by3 carousel-cell">
+            <img src="img/carousel/laser/EDFA.png">
+          </figure>
+          <figure class="image is-4by3 carousel-cell">
+            <img src="img/carousel/laser/shgFrog_secondOrder_solitons.png">
+          </figure>
+          <figure class="image is-4by3 carousel-cell">
+            <img src="img/carousel/laser/MO_RIN_spectral.png">
+          </figure>
+          <figure class="image is-4by3 carousel-cell">
+            <img src="img/carousel/laser/MO_RIN_temporal.png">
+          </figure>
+        </div>
+
+        <div class="content">
+          <p>In this project, I focused on developing an ultrafast Erbium-doped fiber laser system specifically designed for quantum optics applications. The main goal was to create an ultralow-noise, high peak power pulse train capable of efficiently driving nonlinear frequency mixing processes.</p>
+
+          <p>To achieve this, we built a passive mode-locked master oscillator, further amplified by an Erbium-doped fiber amplifier (EDFA).</p>
+
+          <p>After several optimization steps, we achieved pulse durations around 139 fs FWHM with an energy of approximately 4 nJ. We also characterized the laser's intensity noise, obtaining an integrated RIN of 0.081%.</p>
+
+        </div>
+
+      </section>
+      <footer class="modal-card-foot">
+        <button class="button is-success">Close</button>
+      </footer>
+    </div>
+  </div>
+
+  <div id="project-5-modal" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+      <header class="modal-card-head">
+        <p class="modal-card-title">Energy Monitoring System</p>
+        <button class="delete" aria-label="close"></button>
+      </header>
+      <section class="modal-card-body">
+        <div>
+          <a href="https://github.com/colinDietrich/Mobateli" target="_blank" class="button">Github Repo</a>
+        </div>
+        <div id="project-5-modal-carousel" class="carousel">
+          <figure class="image is-4by3 carousel-cell">
+            <img src="img/carousel/codepo/protoCodepo.png">
+          </figure>
+          <figure class="image is-4by3 carousel-cell">
+            <img src="img/carousel/codepo/CodepoPhotos.png">
+          </figure>
+        </div>
+
+        <div class="content">
+          <p>During the 2022-2023 academic year, I led a cooperative project with Camsekin in Kinshasa to tackle the challenges of an unreliable electrical grid in the Democratic Republic of Congo. Our objective was to ensure continuous operation of a solar-powered, refrigerated medical storage facility by designing an advanced energy monitoring system.</p>
+
+          <p>This initiative, developed in partnership with Camsekin and the École Polytechnique de Bruxelles, focused on enhancing battery resilience through precise monitoring and predictive analysis. The system, adaptable to rural setups, tracks battery life with a Kalman filter-based model and visualizes real-time data remotely, supporting critical infrastructure in resource-limited environments.</p>
+
+          <p>Using an Arduino DUE microcontroller, we implemented scripts in Python to monitor solar panel output, comparing actual performance with local weather data predictions. This pilot project is poised to expand across rural medical facilities, safeguarding essential cold-chain storage systems.</p>
+
+          <p>For more details, see the GitHub link above!</p>    
+        </div>
+
+      </section>
+      <footer class="modal-card-foot">
+        <button class="button is-success">Close</button>
+      </footer>
+    </div>
+  </div>
+
+  <div id="project-6-modal" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+      <header class="modal-card-head">
+        <p class="modal-card-title">Solver For Two-Dimensional Poisson Equation</p>
+
+        <button class="delete" aria-label="close"></button>
+      </header>
+      <section class="modal-card-body">
+        <div>
+          <a href="https://github.com/colinDietrich/PoissonSolver" target="_blank" class="button">Github Repo</a>
+        </div>
+        <div id="project-6-modal-carousel" class="carousel">
+          <figure class="image is-4by3 carousel-cell">
+            <img src="img/carousel/poisson/schemaPoissonDiscretization.png">
+          </figure>
+          <figure class="image is-4by3 carousel-cell">
+            <img src="img/carousel/poisson/poissonSolution.png">
+          </figure>
+        </div>
+
+        <div class="content">
+          <p>This project consists in developing a C program to solve the two-dimensional Poisson equation numerically. The focus was on modeling different shapes of membranes and solving the equation using an iterative Multi-Grid method. A key aspect of my project was optimizing the solution process with a relaxation parameter and enhancing the solver's performance by integrating a Multi-Grid preconditioner alongside the PRIMME solver.</p>
+
+          <p>The multi-grid method is an efficient numerical approach for solving differential equations, leveraging multiple levels of grid resolution. The core idea behind the two-grid algorithm is to perform most computational steps inexpensively, with the exception of solving with the UMFPACK direct solver on the coarse grid. The multi-grid method enhances this by iteratively applying pre-smoothing and post-smoothing on progressively coarser grids. Each new coarse grid doubles the discretization step of the old grid until a grid is coarse enough for the problem to be solved directly, significantly reducing computational costs.</p>
+
+          <p>For more information, see the GitHub link above!</p>
+        </div>
+
+      </section>
+      <footer class="modal-card-foot">
+        <button class="button is-success">Close</button>
+      </footer>
+    </div>
+  </div>
+
+  <div id="project-7-modal" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+      <header class="modal-card-head">
+        <p class="modal-card-title">Essay on Hwaking Radiationr</p>
+        <button class="delete" aria-label="close"></button>
+      </header>
+      <section class="modal-card-body">
+        <div>
+          <a href="img/carousel/hawking/hawking_radiation_essay.pdf" target="_blank" class="button">Download Essay</a>
+        </div>
+        <div id="project-7-modal-carousel" class="carousel">
+          <figure class="image is-4by3 carousel-cell">
+            <img src="img/carousel/hawking/HawkingImage.png">
+          </figure>
+        </div>
+
+        <div class="content">
+          <p>My interest has always been in figuring out how things around me work. This curiosity led me down an engineering path in physics, where every answer brought more questions. Along the way, I developed a deep interest in quantum mechanics, the cornerstone of my understanding of the universe. However, my penchant for tangible evidence made me more of an experimentalist than a theorist.</p>
+
+          <p>Enrolling in Brandenberger Robert's course on quantum field theory at McGill University was an opportunity for me in my quest for knowledge. The course introduced me to the nuances of a framework that, despite its relative youth and certain vulnerabilities, forms the foundation of the powerful Standard Model of particle physics and holds out the possibility of a unified theory.</p>
+
+          <p>In this context, I wrote an essay on Hawking radiation, a theoretical prediction where black holes emit thermal black body radiation. Following Stephen Hawking's seminal paper, I used a simplified model involving massless scalar fields for a Schwarzschild black hole to deduce the black hole's blackbody radiation.</p>
+
+          <p>For additional information, see the essay linked below!</p>
+        </div>
+
+      </section>
+      <footer class="modal-card-foot">
+        <button class="button is-success">Close</button>
+      </footer>
+    </div>
+  </div>
+
+  <div id="project-8-modal" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+      <header class="modal-card-head">
+        <p class="modal-card-title">Arcade Game On The App Store</p>
+        <button class="delete" aria-label="close"></button>
+      </header>
+      <section class="modal-card-body">
+        <div id="project-8-modal-carousel" class="carousel">
+          <figure class="image is-4by3 carousel-cell">
+            <img src="img/carousel/kuruma/TrailerKuruma.gif">
+          </figure>
+        </div>
+
+        <div class="content">
+          <p>During my last year of high school, I challenged myself to program a video game within a few months, aiming to publish it on the App Store. After dedicated effort and substantial learning, I successfully released a retro arcade game named KURUMA (meaning "car" in Japanese).</p>
+
+          <p>It was a lot of work, but I loved the process and learned a tremendous amount along the way. From coding and troubleshooting to designing gameplay mechanics, each step deepened my understanding of software development.</p>
+        </div>
+
+      </section>
+      <footer class="modal-card-foot">
+        <button class="button is-success">Close</button>
+      </footer>
+    </div>
+  </div>
+
+  <div id="project-9-modal" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+      <header class="modal-card-head">
+        <p class="modal-card-title">Ray-Tracing Simulation</p>
+        <button class="delete" aria-label="close"></button>
+      </header>
+      <section class="modal-card-body">
+        <div>
+          <a href="https://github.com/colinDietrich/rayTracing" target="_blank" class="button">Github Repo</a>
+        </div>
+        <div id="project-9-modal-carousel" class="carousel">
+          <figure class="image is-4by3 carousel-cell">
+            <img src="img/carousel/ray_tracing/Modes.png">
+          </figure>
+          <figure class="image is-4by3 carousel-cell">
+            <img src="img/carousel/ray_tracing/GA_result.png">
+          </figure>
+        </div>
+
+        <div class="content">
+          <p>During this project, I developed a ray-tracing software to analyze electromagnetic wave propagation, simulating power reception from WiFi access points and mapping 5G indoor small cell base station coverage areas, including received bit rate based on receiver location.</p>
+
+          <p>To ensure efficiency, we used key assumptions: lossless half-wavelength dipole antennas for 5G, uniform transmitter/receiver height, horizontal wave propagation, and a far-field approximation, focusing only on wall reflections and transmissions up to three times while ignoring diffraction and internal obstacles.</p>
+
+          <p>The C++ software featured three modes: visualizing received rays and power, mapping coverage areas with variable transmitter placements, and optimizing transmitter count and location using a genetic algorithm inspired by C. Ting’s work. This innovative approach used chromosome replication to streamline positioning, maximizing coverage without predefined source numbers.</p>
+
+          <p>For more details, see the GitHub link above!</p>
+       
+        </div>
+
+      </section>
+      <footer class="modal-card-foot">
+        <button class="button is-success">Close</button>
+      </footer>
+    </div>
+  </div>
+
+  <div id="project-10-modal" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+      <header class="modal-card-head">
+        <p class="modal-card-title">Tower Defense Gamer</p>
+        <button class="delete" aria-label="close"></button>
+      </header>
+      <section class="modal-card-body">
+        <div>
+          <a href="https://github.com/colinDietrich/TowerDefense" target="_blank" class="button">Github Repo</a>
+        </div>
+        <div id="project-10-modal-carousel" class="carousel">
+          <figure class="image is-4by3 carousel-cell">
+            <img src="img/carousel/tower_defense/towerDefense1.png">
+          </figure>
+          <figure class="image is-4by3 carousel-cell">
+            <img src="img/carousel/tower_defense/towerDefense2.png">
+          </figure>
+        </div>
+
+        <div class="content">
+          <p>This Tower Defense game, developed in Java, challenges players to survive numerous waves of diverse monsters by strategically placing and upgrading various weapons across multiple maps. Each monster possesses unique speed and health attributes, adding complexity to the defense strategy. Players earn in-game currency by defeating monsters, which can be used to upgrade weapons and enhance their defense capabilities. A standout feature of the game is the ability for players to design their own maps, offering a personalized gaming experience and endless replayability.</p>
+
+          <p>For more information, see the GitHub link above!</p>
+        </div>
+
+      </section>
+      <footer class="modal-card-foot">
+        <button class="button is-success">Close</button>
+      </footer>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="content has-text-centered">
+      <p>© Colin Dietrich 2024.</p>
+    </div>
+  </footer>
+
+  <script src="js/bundle.js"></script>
+  <script>
+    // JavaScript to toggle the navbar menu on mobile
+    document.addEventListener('DOMContentLoaded', () => {
+      const navbarBurger = document.querySelector('.navbar-burger');
+      const navbarMenu = document.getElementById('navbarMenu');
+      
+      navbarBurger.addEventListener('click', () => {
+        // Toggle 'is-active' class to open/close menu
+        navbarBurger.classList.toggle('is-active');
+        navbarMenu.classList.toggle('is-active');
+      });
+    });
+  </script>
+</body>
+
+</html>
